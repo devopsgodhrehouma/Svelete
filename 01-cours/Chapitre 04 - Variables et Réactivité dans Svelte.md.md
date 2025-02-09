@@ -197,6 +197,165 @@ Quand on modifie une propriété d’un objet, Svelte ne détecte pas toujours l
 | **bind:** | Liaison d’éléments HTML aux variables |
 | **Tableaux/Objets** | Mise à jour avec `[...tableau]` ou `{ ...objet }` |
 
+
+
+
+---
+
+## **Correction des Exercices Formatifs – Chapitre 04 : Variables et Réactivité dans Svelte**  
+
+
+## **Correction de l'Exercice 1 : Modification Dynamique d'une Variable**  
+📌 **Objectif :** Ajouter un bouton **"Réinitialiser"** qui remet le compteur à zéro et désactiver le bouton si `compteur` vaut déjà 0.
+
+### **Solution :**
+```svelte
+<script>
+  let compteur = 0;
+
+  function incrementer() {
+    compteur += 1;
+  }
+
+  function reset() {
+    compteur = 0;
+  }
+</script>
+
+<h1>Compteur : {compteur}</h1>
+
+<button on:click={incrementer}>+1</button>
+<button on:click={reset} disabled={compteur === 0}>Réinitialiser</button>
+```
+
+### **Explication :**
+✅ **`reset()`** remet `compteur` à zéro.  
+✅ **`disabled={compteur === 0}`** empêche l'utilisateur de cliquer sur **"Réinitialiser"** si `compteur` vaut déjà 0.  
+
+---
+
+## **Correction de l'Exercice 2 : Ajouter un Élément à une Liste via un Champ de Texte**  
+📌 **Objectif :** Permettre à l'utilisateur d'ajouter un fruit saisi dans un champ texte à la liste, en évitant les entrées vides.
+
+### **Solution :**
+```svelte
+<script>
+  let fruits = ["Pomme", "Banane"];
+  let nouveauFruit = "";
+  let message = "";
+
+  function ajouterFruit() {
+    if (nouveauFruit.trim() === "") {
+      message = "⚠️ Veuillez entrer un fruit valide.";
+      return;
+    }
+    
+    fruits = [...fruits, nouveauFruit];
+    nouveauFruit = ""; // Réinitialise le champ
+    message = "✅ Fruit ajouté avec succès !";
+  }
+</script>
+
+<input type="text" bind:value={nouveauFruit} placeholder="Ajoutez un fruit" />
+<button on:click={ajouterFruit}>Ajouter</button>
+
+<p>{message}</p>
+
+<ul>
+  {#each fruits as fruit}
+    <li>{fruit}</li>
+  {/each}
+</ul>
+```
+
+### **Explication :**  
+✅ **Empêche l'ajout d'un fruit vide** avec `trim()`.  
+✅ **Ajoute le fruit à la liste avec `fruits = [...fruits, nouveauFruit]`**.  
+✅ **Réinitialise `nouveauFruit` après ajout** pour vider le champ.  
+✅ **Affiche un message de confirmation ou d'erreur**.  
+
+---
+
+## **Correction de l'Exercice 3 : Suppression d’un Élément d’une Liste**  
+📌 **Objectif :** Ajouter un bouton de suppression pour chaque fruit et afficher un message si la liste est vide.
+
+### **Solution :**
+```svelte
+<script>
+  let fruits = ["Pomme", "Banane"];
+
+  function supprimerFruit(fruit) {
+    fruits = fruits.filter(f => f !== fruit);
+  }
+</script>
+
+{#if fruits.length === 0}
+  <p>Aucun fruit dans la liste.</p>
+{:else}
+  <ul>
+    {#each fruits as fruit}
+      <li>{fruit} <button on:click={() => supprimerFruit(fruit)}>❌</button></li>
+    {/each}
+  </ul>
+{/if}
+```
+
+### **Explication :**  
+✅ **Ajoute un bouton "❌" à côté de chaque fruit.**  
+✅ **Filtre la liste pour exclure l'élément supprimé.**  
+✅ **Affiche un message si la liste devient vide.**  
+
+---
+
+## **🎯 Challenge Final : Correction avec Objets et Tri**  
+📌 **Objectif :** Modifier l’exercice précédent pour stocker les fruits sous forme d'objets `{ id, nom }` et ajouter un tri alphabétique.  
+
+### **Solution :**
+```svelte
+<script>
+  let fruits = [
+    { id: 1, nom: "Pomme" },
+    { id: 2, nom: "Banane" }
+  ];
+  let nouveauFruit = "";
+
+  function ajouterFruit() {
+    if (nouveauFruit.trim() !== "" && !fruits.some(f => f.nom === nouveauFruit)) {
+      fruits = [...fruits, { id: Math.random(), nom: nouveauFruit }];
+      fruits.sort((a, b) => a.nom.localeCompare(b.nom)); // Tri alphabétique
+      nouveauFruit = "";
+    }
+  }
+
+  function supprimerFruit(id) {
+    fruits = fruits.filter(fruit => fruit.id !== id);
+  }
+</script>
+
+<input type="text" bind:value={nouveauFruit} placeholder="Ajoutez un fruit" />
+<button on:click={ajouterFruit}>Ajouter</button>
+
+<ul>
+  {#each fruits as fruit}
+    <li>{fruit.nom} (ID: {fruit.id})
+      <button on:click={() => supprimerFruit(fruit.id)}>❌</button>
+    </li>
+  {/each}
+</ul>
+```
+
+### **Explication :**  
+✅ **Stocke chaque fruit sous forme d’un objet `{ id, nom }`**.  
+✅ **Ajoute un tri alphabétique automatique `fruits.sort()`**.  
+✅ **Génère un `id` unique pour chaque nouvel élément avec `Math.random()`**.  
+✅ **Suppression basée sur l'`id` et non le nom**.  
+
+
+
+
+
+
+
 ---
 
 ### **Prochain chapitre : Les événements et interactions utilisateur dans Svelte !** 🚀  
