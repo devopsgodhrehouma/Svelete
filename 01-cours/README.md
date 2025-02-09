@@ -1,1 +1,56 @@
+- chapitre01_introduction.md
+- chapitre02_installation.md
+- chapitre03_premier_projet.md
+- chapitre04_structure_composant.md
+- chapitre05_variables_et_reactivite.md
+
+chapitre06_evenements_interactions.md
+
+chapitre07_conditions_boucles.md
+
+chapitre08_composants_reutilisables.md
+
+chapitre09_transmission_donnees.md
+
+chapitre10_stores_et_etat_global.md
+
+chapitre11_style_et_css.md
+
+chapitre12_animation_et_transitions.md
+
+chapitre13_interaction_utilisateur.md
+
+chapitre14_api_et_donnees_externes.md
+
+chapitre15_formulaires_et_validation.md
+
+chapitre16_routage_avec_sveltekit.md
+
+chapitre17_gestion_erreurs.md
+
+chapitre18_localstorage_et_persistance.md
+
+chapitre19_creation_plugin_svelte.md
+
+chapitre20_tests_et_debugging.md
+
+chapitre21_optimisation_performance.md
+
+chapitre22_accessibilite_a11y.md
+
+chapitre23_internationalisation.md
+
+chapitre24_deploiement_vercel_netlify.md
+
+chapitre25_authentification_et_securite.md
+
+chapitre26_pratique_projet_todolist.md
+
+chapitre27_pratique_projet_dashboard.md
+
+chapitre28_pratique_projet_ecommerce.md
+
+chapitre29_pratique_projet_chatbot.md
+
+chapitre30_conclusion_et_aller_plus_loin.md
 
