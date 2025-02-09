@@ -1,1 +1,1 @@
-# Svelete
+# Learn-Svelte-5-Rune-Syntax
