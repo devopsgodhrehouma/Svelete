@@ -2,6 +2,7 @@
 
 # 🚀 **Objectif du Portfolio IA**
 Ce portfolio inclura :
+
 ✅ Une **page d’accueil moderne** avec une introduction à ton travail  
 ✅ Une **section IA interactive** pour montrer des modèles IA entraînés en direct  
 ✅ Une **galerie de projets IA** avec des démonstrations interactives  
