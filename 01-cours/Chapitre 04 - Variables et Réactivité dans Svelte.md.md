@@ -351,7 +351,7 @@ Quand on modifie une propriété d’un objet, Svelte ne détecte pas toujours l
 ✅ **Suppression basée sur l'`id` et non le nom**.  
 
 
-
+🎯 **Challenge Final :** Modifiez l’exercice 3 pour utiliser un **tableau d'objets** avec des IDs uniques et ajoutez une **fonction de tri alphabétique**. 🚀
 
 
 
@@ -360,4 +360,4 @@ Quand on modifie une propriété d’un objet, Svelte ne détecte pas toujours l
 
 ### **Prochain chapitre : Les événements et interactions utilisateur dans Svelte !** 🚀  
 
-🎯 **Challenge Final :** Modifiez l’exercice 3 pour utiliser un **tableau d'objets** avec des IDs uniques et ajoutez une **fonction de tri alphabétique**. 🚀
+
