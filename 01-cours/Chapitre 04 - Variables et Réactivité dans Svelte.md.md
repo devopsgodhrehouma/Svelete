@@ -202,7 +202,7 @@ Quand on modifie une propriété d’un objet, Svelte ne détecte pas toujours l
 
 ---
 
-## **Correction des Exercices Formatifs – Chapitre 04 : Variables et Réactivité dans Svelte**  
+## 9 - **Correction des Exercices Formatifs – Chapitre 04 : Variables et Réactivité dans Svelte**  
 
 
 ## **Correction de l'Exercice 1 : Modification Dynamique d'une Variable**  
