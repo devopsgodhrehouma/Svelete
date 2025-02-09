@@ -151,7 +151,42 @@ Quand on modifie une propriété d’un objet, Svelte ne détecte pas toujours l
 
 ---
 
-## **7. Résumé**  
+## **7. Exercices Formatifs** 🎯  
+
+### **Exercice 1 : Modification Dynamique d'une Variable**  
+📌 **Objectif :** Ajouter un bouton qui réinitialise le compteur à zéro.  
+
+1. Ajoutez un bouton **"Réinitialiser"** sous le bouton **"+1"**.  
+2. Lorsque l'utilisateur clique dessus, la valeur de `compteur` doit revenir à `0`.  
+
+✅ **Bonus :** Désactivez le bouton "Réinitialiser" si `compteur` est déjà à zéro.  
+
+---
+
+### **Exercice 2 : Ajouter un Élément à une Liste via un Champ de Texte**  
+📌 **Objectif :** Permettre à l'utilisateur d'ajouter un fruit de son choix via un `input`.  
+
+1. Ajoutez un champ `<input>` avec `bind:value` à une variable `nouveauFruit`.  
+2. Modifiez la fonction `ajouterFruit()` pour ajouter le fruit entré par l’utilisateur.  
+3. Empêchez d’ajouter un élément vide.  
+4. Réinitialisez le champ après l'ajout.  
+
+✅ **Bonus :** Affichez un message d’erreur si l’utilisateur essaie d’ajouter un fruit vide.  
+
+---
+
+### **Exercice 3 : Suppression d’un Élément d’une Liste**  
+📌 **Objectif :** Ajouter un bouton de suppression pour chaque fruit.  
+
+1. Ajoutez un bouton **"❌ Supprimer"** à côté de chaque fruit.  
+2. Lorsqu'on clique dessus, le fruit doit être supprimé de la liste.  
+3. Affichez un message **"Aucun fruit dans la liste"** si elle devient vide.  
+
+✅ **Bonus :** Ajoutez un effet visuel pour la suppression des fruits (ex: **fade-out**).  
+
+---
+
+## **8. Résumé**  
 
 | Concept | Explication |
 |---------|------------|
@@ -164,4 +199,6 @@ Quand on modifie une propriété d’un objet, Svelte ne détecte pas toujours l
 
 ---
 
-### **Prochain chapitre : Les événements et interactions utilisateur dans Svelte !** 🚀
+### **Prochain chapitre : Les événements et interactions utilisateur dans Svelte !** 🚀  
+
+🎯 **Challenge Final :** Modifiez l’exercice 3 pour utiliser un **tableau d'objets** avec des IDs uniques et ajoutez une **fonction de tri alphabétique**. 🚀
