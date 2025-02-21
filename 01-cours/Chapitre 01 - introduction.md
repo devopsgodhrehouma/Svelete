@@ -53,3 +53,9 @@ Bonjour, Svelte !
 ```
 
 Dans le prochain chapitre, nous verrons **comment installer Svelte et créer notre premier projet**. 🚀  
+
+
+# Références:
+- https://svelte.dev/tutorial/svelte/welcome-to-svelte
+- https://svelte.dev/docs/svelte/overview
+- 
