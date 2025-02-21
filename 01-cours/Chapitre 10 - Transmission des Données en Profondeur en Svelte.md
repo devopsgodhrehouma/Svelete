@@ -1,4 +1,4 @@
-# **Chapitre 09 - Transmission des Données en Profondeur en Svelte**  
+# **Chapitre 10 - Transmission des Données en Profondeur en Svelte**  
 
 ---
 
