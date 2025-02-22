@@ -58,4 +58,4 @@ Dans le prochain chapitre, nous verrons **comment installer Svelte et créer not
 # Références:
 - https://svelte.dev/tutorial/svelte/welcome-to-svelte
 - https://svelte.dev/docs/svelte/overview
-- 
+- https://svelte.dev/docs/kit/creating-a-project
