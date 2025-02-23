@@ -1,6 +1,6 @@
 
 
-
+```sh
 /mon-projet-sveltekit
 │── src/
 │   ├── routes/
@@ -34,3 +34,4 @@
 │── svelte.config.js                   # Configuration de SvelteKit
 │── vite.config.js                     # Configuration Vite
 │── README.md                          # Documentation du projet
+```
