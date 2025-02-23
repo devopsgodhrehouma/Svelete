@@ -1,6 +1,6 @@
 
 
-```sh
+```ssh
 /mon-projet-sveltekit
 │── src/
 │   ├── routes/
@@ -35,3 +35,16 @@
 │── vite.config.js                     # Configuration Vite
 │── README.md                          # Documentation du projet
 ```
+
+
+
+## **📌 Explication du schéma :**
+- **`/routes`** → Structure de l’application basée sur les routes.  
+- **`+layout.svelte`** → Layout global (ex: navigation, footer).  
+- **`/blog/[id]/+page.svelte`** → Route dynamique pour afficher un article.  
+- **`/lib/api.js`** → Fichier dédié aux appels API.  
+- **`+page.js`** → Chargement des données avant l'affichage d'une page.  
+- **`+error.svelte`** → Gestion propre des erreurs.
+
+✅ **Avec cette structure, notre projet est clair, organisé et optimisé pour le SEO !** 🚀
+
