@@ -23,7 +23,7 @@ Ce projet inclura :
 📌 **Créer un projet SvelteKit avec Vite**  
 
 ```sh
-npm create svelte@latest portfolio-ia
+npm create svelte@latest portfolio-ia (voir annexe 1 si la commande ne marche pas)
 cd portfolio-ia
 npm install
 ```
@@ -220,6 +220,72 @@ vercel
 ✔️ **Liste des projets avec liens vers GitHub**  
 ✔️ **Formulaire de contact interactif**  
 ✔️ **Déploiement rapide sur Vercel**  
+
+
+
+# Annexe 1 :
+
+La commande correcte pour créer un projet **SvelteKit** en utilisant `npx sv create` avec toutes les options par défaut est :
+
+```sh
+npx sv create portfolio-ia --template skeleton --yes
+```
+
+📌 **Explication des options :**  
+- `npx sv create` → Nouvelle version officielle pour créer un projet SvelteKit.  
+- `portfolio-ia` → Nom du dossier du projet.  
+- `--template skeleton` → Utilise le modèle minimal sans fichiers de démonstration.  
+- `--yes` → Accepte toutes les options par défaut sans poser de questions.  
+
+---
+
+## **Si tu veux voir toutes les options manuelles :**
+Tu peux exécuter cette commande sans `--yes` :
+
+```sh
+npx sv create portfolio-ia
+```
+
+Cela va te poser des questions comme :  
+1. **Which Svelte app template?** → `skeleton` (léger) ou `demo` (avec exemples).  
+2. **Use TypeScript?** → `Yes` ou `No`.  
+3. **Add ESLint for code linting?** → `Yes` ou `No`.  
+4. **Add Prettier for formatting?** → `Yes` ou `No`.  
+
+---
+
+### **FAQ :**
+✔ **Quelle différence entre `skeleton` et `demo` ?**  
+- `skeleton` → Projet minimal (idéal pour commencer rapidement).  
+- `demo` → Projet avec des fichiers d’exemples et des composants de base.  
+
+✔ **Pourquoi utiliser `--yes` ?**  
+- Pour éviter les questions et utiliser les paramètres par défaut.  
+
+---
+
+💡 **Conclusion :**  
+Si tu veux **un projet rapide et minimal**, utilise :  
+
+```sh
+npx sv create portfolio-ia --template skeleton --yes
+```
+
+Si tu veux **choisir les options manuellement**, utilise :  
+
+```sh
+npx sv create portfolio-ia
+```
+
+✅ **Après l’installation, lance ton projet avec :**  
+
+```sh
+cd portfolio-ia
+npm install
+npm run dev
+```
+
+🚀 **Ton portfolio SvelteKit est maintenant prêt à être développé !**
 
 ---
 
